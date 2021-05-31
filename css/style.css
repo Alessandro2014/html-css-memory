@@ -41,6 +41,8 @@ header {
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
+    cursor: pointer;
+    position: relative;
 }
 
 .card_face-up {
@@ -70,7 +72,7 @@ header {
     background-image: url("../img/Submarine.png");
 }
 
-.air_ballon:hover {
+.air_balloon:hover {
     background-image: url("../img/air_balloon.png");
 }
 
@@ -88,6 +90,45 @@ header {
 
 .tractor:hover {
     background-image: url("../img/Tractor.png");
+}
+
+.card:hover ::after {
+    content: "Bicycle";
+    font-size: 26px;
+    font-weight: 900;
+    position: absolute;
+    bottom: 5%;
+    left: 20%;
+}
+
+.bicycle:hover ::after {
+    content: "Bicycle";
+    color: rgb(214, 140, 3);
+}
+
+.submarine:hover ::after {
+    content: "Submarine";
+    color: rgb(255, 143, 161);
+}
+
+.tractor:hover ::after {
+    content: "Tractor";
+    color: brown;
+}
+
+.cruise:hover ::after {
+    content: "Cruise";
+    color: rgb(180, 180, 1);
+}
+
+.tram:hover ::after {
+    content: "Tram";
+    color: green;
+}
+
+.air_balloon:hover ::after {
+    content: "Air allom";
+    color: blue;
 }
 
 footer {
