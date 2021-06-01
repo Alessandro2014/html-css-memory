@@ -94,7 +94,6 @@ header {
 }
 
 .card:hover ::after {
-    content: "Bicycle";
     font-size: 26px;
     font-weight: 900;
     position: absolute;
